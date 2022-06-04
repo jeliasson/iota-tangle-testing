@@ -1,1 +1,1 @@
-console.log(`Hello from bin`)
+require('./index')
