@@ -1,0 +1,81 @@
+Arguments: 
+  /home/johan/.nvm/versions/node/v18.3.0/bin/node /home/johan/.nvm/versions/node/v18.3.0/bin/yarn
+
+PATH: 
+  /home/johan/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bin/remote-cli:/home/johan/.nvm/versions/node/v18.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Users/johan/AppData/Local/Microsoft/WindowsApps
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  18.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/johan/code/jeliasson/iota-tangle-testing/package.json: Unexpected token } in JSON at position 547
+      at JSON.parse (<anonymous>)
+      at /home/johan/.nvm/versions/node/v18.3.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/johan/.nvm/versions/node/v18.3.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/johan/.nvm/versions/node/v18.3.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "@jeliasson/iota-tangle-testing",
+    "version": "0.0.1",
+    "license": "MIT",
+    "description": "This is just a test bed for the IOTA Tangle",
+    "author": "jeliasson",
+    "homepage": "https://github.com/jeliasson/iota-tangle-testing",
+    "keywords": [
+      "iota",
+      "tangle",
+      "testing"
+    ],
+    "bugs": {
+      "url": "https://github.com/jeliasson/iota-tangle-testing/issues"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jeliasson/iota-tangle-testing.git"
+    },
+    "dependencies": {
+      "husky": "^8.0.1",
+    },
+    "devDependencies": {
+      "@types/node": "17.0.35",
+      "@typescript-eslint/eslint-plugin": "5.27.0",
+      "@typescript-eslint/parser": "5.27.0",
+      "eslint": "8.16.0",
+      "eslint-config-prettier": "8.5.0",
+      "eslint-plugin-import": "2.26.0",
+      "eslint-plugin-import-helpers": "1.2.1",
+      "prettier": "2.6.2",
+      "ts-jest": "28.0.4",
+      "tsc-watch": "5.0.3",
+      "typescript": "4.7.2"
+    },
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
+      "lib/**/*"
+    ],
+    "bin": {
+      "iota-tangle-testing": "lib/bin.js"
+    },
+    "scripts": {
+      "dev": "tsc-watch",
+      "build": "tsc",
+      "format": "prettier --write \"src/**/*.ts\"",
+      "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx --fix .",
+      "test": "jest --config jestconfig.json"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
