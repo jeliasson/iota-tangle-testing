@@ -39,10 +39,10 @@
     neon-cli "^0.8"
     prebuild-install "^6.1.2"
 
-"@jeliasson/husky-hooks@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@jeliasson/husky-hooks/-/husky-hooks-0.2.0.tgz#a1c1bf50b737f1332b8c421c424f606712e7c411"
-  integrity sha512-fbvopAjZdMbX8HJfhrK/cTYkzF5/+NoWmmceiXqCMTgTAfx35113f2cZVZ4xX0tNmInOR7WfAKeYz3Pso7R+8w==
+"@jeliasson/husky-hooks@0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@jeliasson/husky-hooks/-/husky-hooks-0.2.1.tgz#d1c4723b3f5934d89a997106bb19f54ebac6d0a1"
+  integrity sha512-lpMiEtLFN9+DE6s+hjHewUPlXzLRVxH6Ab9Gf9TQU7rCJTVuv4XDz9VlXb/UyWaKCu+wBMNJDu37Dk9Yx3Nrvg==
   dependencies:
     husky "^8.0.1"
     node-fetch "^2.6.7"
